@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Securite</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/eufopla_dash.png" alt="Logo Eufopla" /></a>
+        </div>
+        <nav class="menu">
+            <div class="objectif">
+                <a href="objectif.html">Objectif</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Fonctionnalités ▼</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Scanner de mot de passe</a>
+                    <a href="mdp.html">Générer des mots de passes</a>
+                    <a href="form.html">Score de sécurité</a>
+                </div>
+            </div>
+            <div class="contact">
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="droite"></div>
+    </header>
+
+    <div class="titre2">Besoin d'un mot de passe avec un haut niveau de sécurité ?</div>
+    <div class="b2">
+        <div class="sstitre">Générez-le ici :</div><br>
+        <div class="bu1">
+            <button class="genere" onclick="genererMdp()">Générer</button>
+            <textarea class="gmdp" id="resmdp"></textarea>
+            <button class="copy" onclick="copyMdp()">📋</button>
+        </div>
+    </div>
+
+    <div class="parallelogram">
+        <div class="content">
+            <div class="textobj">
+                <p>→ Adopter de bons réflexes sur Internet est essentiel pour limiter les risques liés à la navigation
+                    en ligne.
+                    Que ce soit pour protéger ses données personnelles, éviter les arnaques ou se prémunir contre les
+                    piratages, une attitude
+                    responsable fait toute la différence. Être attentif aux sites visités, aux liens sur lesquels on
+                    clique, ou aux informations
+                    que l’on partage permet de renforcer sa sécurité au quotidien.</p>
+            </div>
+        </div>
+        <div class="penche"></div>
+        <div class="penche2"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

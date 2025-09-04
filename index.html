@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Securite</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/eufopla_dash.png" alt="Logo Eufopla" /></a>
+        </div>
+        <nav class="menu">
+            <div class="objectif">
+                <a href="objectif.html">Objectif</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Fonctionnalités ▼</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Scanner de mot de passe</a>
+                    <a href="mdp.html">Générer des mots de passes</a>
+                    <a href="form.html">Score de sécurité</a>
+                </div>
+            </div>
+            <div class="contact">
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="droite"></div>
+    </header>
+
+    <div class="titre">Une navigation en ligne plus sûre avec Dash Eufopla</div>
+
+    <div class="suite">
+        <p><strong>-> Découvrez si vos mots de passes sont des proies faciles sur internet</strong></p>
+        <div class="mdptest">
+            <div class="mdpbtext">
+                <p><b>Quel est le niveau de sécurité de mon mot de passe ?</b></p>
+            </div>
+            <input type="password" id="password" placeholder="Saisir un mot de passe">
+        </div>
+        <div id="force"></div>
+        <div id="temps"></div>
+        <div id="result"></div>
+    </div>
+
+    <div class="info">
+        <p><br>Aucune donnée n'est enregistré ou conservée.</p>
+    </div>
+
+    <div class="parallelogram">
+        <div class="content">
+            <div class="textobj">
+                <p>→ Pour garantir un haut niveau de sécurité, un mot de passe doit contenir
+                    au minimum 12 caractères et inclure une combinaison de lettres majuscules et minuscules,
+                    de chiffres, ainsi que de caractères spéciaux. Il est essentiel d’éviter les mots courants,
+                    les noms propres ou toute information personnelle facilement devinable. Cette complexité
+                    rend le mot de passe plus difficile à pirater.</p>
+            </div>
+        </div>
+        <div class="penche"></div>
+        <div class="penche2"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

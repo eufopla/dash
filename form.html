@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Securite</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/eufopla_dash.png" alt="Logo Eufopla" /></a>
+        </div>
+        <nav class="menu">
+            <div class="objectif">
+                <a href="objectif.html">Objectif</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Fonctionnalités ▼</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Scanner de mot de passe</a>
+                    <a href="mdp.html">Générer des mots de passes</a>
+                    <a href="form.html">Score de sécurité</a>
+                </div>
+            </div>
+            <div class="contact">
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="droite"></div>
+    </header>
+
+    <div class="titre2">Obtenez votre score de sécurité</div>
+    <div class="b2">
+        <div class="sstitre">Questionnaire sur vos habitudes sur le net :</div><br>
+        <div class="bu1">
+            <form id="securityForm">
+
+                <div class="question">
+                    <span>Vous avez déjà réutilisé le même mot de passe.</span>
+                    <input type="checkbox" name="q1">
+                </div>
+
+                <div class="question">
+                    <span>Vous avez déjà cliqué sur un lien envoyé par un inconnu.</span>
+                    <input type="checkbox" name="q2">
+                </div>
+
+                <div class="question">
+                    <span>Vous vous êtes déjà servi d'une information personnelle pour créer un mot de passe.</span>
+                    <input type="checkbox" name="q3">
+                </div>
+
+                <div class="question">
+                    <span>Vous avez déjà entré vos coordonnées bancaires sur un site suspect.</span>
+                    <input type="checkbox" name="q4">
+                </div>
+
+                <div class="question">
+                    <span>Vous possédez un profil public sur les réseaux sociaux avec vos infos perso.</span>
+                    <input type="checkbox" name="q5">
+                </div>
+
+                <div class="question">
+                    <span>Vous n'utilisez pas de coffre-fort numérique pour mots de passe.</span>
+                    <input type="checkbox" name="q6">
+                </div>
+
+                <div class="question">
+                    <span>Vous avez déjà communiqué un mot de passe à un tiers.</span>
+                    <input type="checkbox" name="q7">
+                </div>
+
+                <div class="question">
+                    <span>Vous acceptez les cookies sur un site.</span>
+                    <input type="checkbox" name="q8">
+                </div>
+
+                <div class="question">
+                    <span>Vous ne vérifiez pas la source d'un téléchargement.</span>
+                    <input type="checkbox" name="q9">
+                </div>
+
+                <div class="question">
+                    <span>Vous utilisez la fonctionnalité "Se souvenir de moi".</span>
+                    <input type="checkbox" name="q10">
+                </div>
+                <button class="suivant_f" type="button" onclick="suivant()">Suivant</button>
+            </form>
+            
+            <div id="resform"></div>
+            
+        </div>
+    </div>
+    <div class="cons">
+        <button class="conseil_b" type="button" onclick="conseil()">
+            Conseils
+            <div class="arrow-wrapper">
+                <div class="arrow"></div>
+            </div>
+        </button>
+        <div id="expln" class="hidden"></div>
+    </div>
+    
+
+    <script src="script_form.js"></script>
+</body>
+
+</html>
